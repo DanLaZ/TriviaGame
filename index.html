@@ -53,85 +53,107 @@
 
         <!-- Question Head -->
         <h1>Test Your Knowledge Of Tree Facts</h1>
+
+        <br>
         <br>
 
         <!-- Timer -->
-        <p id="timerCount"></p> <!-- Have the timer's audio be the 24 tick sound|Use the 24 timer font as well -->
+        <div id="timerCount"></div> <!-- Have the timer's audio be the 24 tick sound|Use the 24 timer font as well -->
 
-        <!-- Radio Forms -->
+        <!-- radio Forms -->
         <div class="formContainer">
 
-            <form class="form" action="assets/javascript/app.js" method="get">
+            <!--1st Question-->
+            <form id="question1" action="assets/javascript/app.js" method="POST">
             
-                <label for="Q1">The Amazon rainforest produces half the world’s oxygen supply.</label>
+                <h2>1st Question</h2>
                 <br>
-                <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> True
+                <label class="questionText" for="Q1">The Amazon rainforest produces half the world’s oxygen supply.</label>
+                <br>
+                <br>
+                <input class="answerStyle" id="rightAnswer" type="radio" name="rightAnswer" value="rightAnswer"> True
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> False
 
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> False
-
-                <br>
-                <br>
-           
-                <label for="Q2">Oak trees don’t produce acorns until they are 5 years old.</label>
-                <br>
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> True
-            
-                <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> False
-
-                <br>
-                <br>
-        
-                <label for="Q3">The tallest known tree in the world is a coast redwood measuring at 379 ft. (115.6m). What  was the tree named?</label>
-                <br>
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Big Red
-
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Colossus
-
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Larix
-            
-                <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> Hyperion
-
-                <br>
-                <br>
-     
-                <label for="Q4">The Great Tree Yggdrasil belongs to which mythology?</label>
-                <br>
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Celtic
-
-                <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> Norse
-
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Mesopotamian
-            
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Greek
-
-                <br>
-                <br>
-
-                <label for="Q5">The fruit referred to as the "little apple of death" comes from which tree?</label>
-                <br>
-                <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> Manchineel
-
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Strychnine
-
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Milky Mangrove
-            
-                <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Forbidden Palm
-
-                <br>
-                <br>
-
-                <input type="submit" value="Submit Answers">
             </form>
+
+            <br>
+            <br>
+        
+            <!--2nd Question-->
+            <form id="question2">
+
+                <h2>2nd Question</h2>
+                <br>
+                <label class="questionText" for="Q2">Oak trees don’t produce acorns until they are 5 years old.</label>
+                <br>
+                <br>
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> True
+                <input class="answerStyle" id="rightAnswer" type="radio" name="rightAnswer" value="rightAnswer"> False
+
+            </form>
+
+            <br>
+            <br>
+    
+            <!--3rd Question-->
+            <form id="question3">
+
+                <h2>3rd Question</h2>
+                <br>
+                <label class="questionText" for="Q3">The tallest known tree in the world is a coast redwood measuring at 379 ft. (115.6m). What  was the tree named?</label>
+                <br>
+                <br>
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Big Red
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Colossus
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Larix
+                <input class="answerStyle" id="rightAnswer" type="radio" name="rightAnswer" value="rightAnswer"> Hyperion
+
+            </form>
+
+            <br>
+            <br>
+
+            <!--4th Question-->
+            <form id="question4">
+
+                <h2>4th Question</h2>
+                <br>
+                <label class="questionText" for="Q4">The Great Tree Yggdrasil belongs to which mythology?</label>
+                <br>
+                <br>
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Celtic
+                <input class="answerStyle" id="rightAnswer" type="radio" name="rightAnswer" value="rightAnswer"> Norse
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Mesopotamian
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Greek
+
+            </form>
+
+            <br>
+            <br>
+
+            <!--5th Question-->
+            <form id="question5">
+
+                <h2>5th Question</h2>
+                <br>
+                <label class="questionText" for="Q5">The fruit referred to as the "little apple of death" comes from which tree?</label>
+                <br>
+                <br>
+                <input class="answerStyle" id="rightAnswer" type="radio" name="rightAnswer" value="rightAnswer">Manchineel
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer">Strychnine
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer"> Milky Mangrove
+                <input class="answerStyle" id="wrongAnswer" type="radio" name="wrongAnswer" value="wrongAnswer">Forbidden Palm
+
+            </form>
+
+            <br>
+            <br>
+
+            <input id="submitButton" type="button" value="Submit Answers" onclick="submitAnswers()">
 
         </div>    
 
-
-
-
-
     </div>
-
-
 
 </body>
 </html>
