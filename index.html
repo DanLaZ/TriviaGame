@@ -16,7 +16,7 @@
     <!--Ionicons link That Pulls The Icons From Their Database-->
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
-    <title>Document</title>
+    <title>Nurturing Nectar</title>
 </head>
 <body>
     
@@ -24,7 +24,7 @@
     
         <div class="headContainer1">
 
-            <img class="" src="" alt="">
+            <img class="" src="assets/images/black-colors-dark-681467.jpg" alt="Image of the sunset with trees in the background">
 
         </div>
 
@@ -51,12 +51,17 @@
 
     <div class="wrapper">
 
-        <!-- Questions -->
+        <!-- Question Head -->
+        <h1>Test Your Knowledge Of Tree Facts</h1>
+        <br>
+
+        <!-- Timer -->
+        <p id="timerCount"></p> <!-- Have the timer's audio be the 24 tick sound|Use the 24 timer font as well -->
 
         <!-- Radio Forms -->
         <div class="formContainer">
 
-            <form class="form">
+            <form class="form" action="assets/javascript/app.js" method="get">
             
                 <label for="Q1">The Amazon rainforest produces half the world’s oxygen supply.</label>
                 <br>
@@ -64,20 +69,18 @@
 
                 <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> False
 
-            </form>
-            <br>
-            <form class="form">
-
+                <br>
+                <br>
+           
                 <label for="Q2">Oak trees don’t produce acorns until they are 5 years old.</label>
                 <br>
                 <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> True
             
                 <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> False
 
-            </form>
-            <br>
-            <form class="form">
-
+                <br>
+                <br>
+        
                 <label for="Q3">The tallest known tree in the world is a coast redwood measuring at 379 ft. (115.6m). What  was the tree named?</label>
                 <br>
                 <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Big Red
@@ -88,10 +91,9 @@
             
                 <input id="rightAnswer" type="radio" name="Answer" value="rightAnswer"> Hyperion
 
-            </form>
-            <br>
-            <form class="form">
-
+                <br>
+                <br>
+     
                 <label for="Q4">The Great Tree Yggdrasil belongs to which mythology?</label>
                 <br>
                 <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Celtic
@@ -102,9 +104,8 @@
             
                 <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Greek
 
-            </form>
-            <br>
-            <form class="form">
+                <br>
+                <br>
 
                 <label for="Q5">The fruit referred to as the "little apple of death" comes from which tree?</label>
                 <br>
@@ -116,10 +117,11 @@
             
                 <input id="wrongAnswer" type="radio" name="Answer" value="wrongAnswer"> Forbidden Palm
 
-            </form>
-            <br>
+                <br>
+                <br>
 
-            <a href="#" id="submit"><p id="submit-text" >Submit</p></a>
+                <input type="submit" value="Submit Answers">
+            </form>
 
         </div>    
 
