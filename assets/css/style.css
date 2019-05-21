@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+.text-style {
+   color: #F5F5F5;
+}
+
+.headContainer1, .headContainer2 {
+    padding: 0;
+}
+
+#headerImg {
+    height: 50px;
+    width: 100%;
+}
+
+#headCreatedBy {
+    float: left;
+}
+
+
+
+.questionBackground {
+    background-color: #F5F5F5;
+}
+
+.rosePic {
+    width: 100%;
+}
