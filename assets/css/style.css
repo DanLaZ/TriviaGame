@@ -1,28 +1,45 @@
+
+/* General Styles */
 body {
-    background-color: black;
+    background: -webkit-linear-gradient(black, #8B0000);
 }
 
+
+/* Header/Top-Footer Style */
 .text-style {
-   color: #F5F5F5;
+    font-family: 'Tangerine', cursive;
+    font-size: 45px;
+    color: #FFFAFA;
 }
 
-.headContainer1, .headContainer2 {
+.headContainer1, .headContainer2, .headContainer3 {
     padding: 0;
 }
 
-#headerImg {
-    height: 50px;
-    width: 100%;
+.headContainer1 {
+    background-color: black;
+}
+
+.headerTitle {
+    font-family: 'Bangers', cursive;
+    color: #FFFAFA;
+    font-size: 75px;
+    padding: 0;
+    background: -webkit-linear-gradient(#8B0000, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #FFFAFA;
 }
 
 #headCreatedBy {
-    float: left;
+    padding-top: 10px;
 }
 
 
-
+/* Main Content Background Style */
 .questionBackground {
-    background-color: #F5F5F5;
+    color: #FFFAFA;
 }
 
 .rosePic {
