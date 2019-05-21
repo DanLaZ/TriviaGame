@@ -36,12 +36,52 @@ body {
     padding-top: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.icon {
+    color: #8B0000;
+    padding-top: 10px;
+    margin: 0 20px;
+    opacity:0.4;
+}
+
 
 /* Main Content Background Style */
+
+h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+    background: -webkit-linear-gradient(#FFFAFA, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.formConatiner {
+    max-width: auto;
+}
+
 .questionBackground {
     color: #FFFAFA;
 }
 
+.col-4 {
+    padding: 0;
+    margin: 0;
+}
+
 .rosePic {
     width: 100%;
+    opacity:0.4;
 }
+
+
