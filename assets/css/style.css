@@ -43,7 +43,7 @@ a {
 .icon {
     color: #8B0000;
     padding-top: 10px;
-    margin: 0 20px;
+    margin: 0 15px;
     opacity:0.4;
 }
 
@@ -59,6 +59,17 @@ h2 {
 }
 form {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#timerCount {
+    font-family: 'Oleo Script', cursive;
+    color: #FFFAFA;
+    font-size: 18px;
+    font-stretch: wider;
+    padding: 0;
+    background: -webkit-linear-gradient(#FFFAFA, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 label {
