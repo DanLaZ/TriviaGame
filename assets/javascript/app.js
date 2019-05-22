@@ -3,14 +3,17 @@
 /*****************/
 
 /* Timer */
-var time = 0;
+var time = 120;
 var clockRunning = false;
 var intervalId;
+//
+var stopAtZero = setTimeout(stop, (2 * 60 * 1000) + 2000 );
 
 window.onload = function() {
 
     $("#startTimer").on("click", start);
-};
+    $("#startTimer").on("click", stopAtZero);
+}
 
 function start() {
 
@@ -18,12 +21,20 @@ function start() {
       intervalId = setInterval(count, 1000);
       clockRunning = true;
     }
-    alert("You have 2mins to submit your answers. Good Luck Buddy =D");
+}
+
+function stop() {
+
+    if (time === 0) {
+        clearInterval(intervalId);
+        clockRunning = false;
+    }
+    alert("Time's up!");
 }
 
 function count() {
 
-    time++;
+    time--;
     var converted = timeConverter(time);
     $("#timerCount").text(converted);
 }
@@ -49,8 +60,7 @@ function timeConverter(t) {
 
 
 /* SetTime Function */
-var countDown = setTimeout(postResults, 2 * 60 * 1000); //<=== set for 2mins
-
+var countDown = setTimeout(postResults, (2 * 60 * 1000) + 2000 ); //<=== set for 2mins
 $("#startTimer").on("click", countDown);
 
 /*  */
