@@ -58,15 +58,16 @@ function timeConverter(t) {
 
 var correct = 0;
 var wrong = 5;
+var _1stQuestion = $("input[name=question1]:radio");
+var _2ndQuestion = $("input[name=question2]:radio");
+var _3rdQuestion = $("input[name=question3]:radio");
+var _4thQuestion = $("input[name=question4]:radio");
+var _5thQuestion = $("input[name=question5]:radio");
 
 var answerAlert = function() {
 
   alert("Correct:" + " " + correct + "    " +  "Wrong:" + " " + wrong);
 }
-
-
-
-
 
 /* Button Clicks */
 /********************/
