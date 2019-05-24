@@ -1,4 +1,4 @@
-# Nurturing Nectar(TriviaGame)
+# Nurturing Nectar (TriviaGame)
 
 ## Rules
 Click the start button and answer the questions. 
