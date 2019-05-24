@@ -1,4 +1,5 @@
 
+
 /* Timer Code */
 /*****************/
 
@@ -7,11 +8,6 @@ var time = 120;
 var clockRunning = false;
 var intervalId;
 
-window.onload = function() {
-
-  $("#startTimer").on("click", start);
-  $("#startTimer").on("click", stop);
-}
 
 function start() {
 
@@ -26,7 +22,7 @@ function stop() {
   setTimeout(function() {
     clearInterval(intervalId);
     clockRunning = false;
-    alert("Time's up!");
+    alert(answerAlert);
     window.location.reload();
   }, 120000)
 }
@@ -55,4 +51,28 @@ function timeConverter(t) {
   }
   return minutes + ":" + seconds;
 
+}
+
+/* Logging Correct Answers */
+/*****************************/
+
+var correct = 0;
+var wrong = 5;
+
+var answerAlert = function() {
+
+  alert("Correct:" + " " + correct + "    " +  "Wrong:" + " " + wrong);
+}
+
+
+
+
+
+/* Button Clicks */
+/********************/
+window.onload = function() {
+
+  $("#startTimer").on("click", start);
+  $("#startTimer").on("click", stop);
+  $("#submitButton").on("click", answerAlert);
 }
