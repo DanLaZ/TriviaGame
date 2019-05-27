@@ -6,4 +6,7 @@ If you finish before the timer hits 00:00 click the submit button.
 
 ### Take a Look -____-
 
+Play here!
+https://danlaz.github.io/TriviaGame/
+
 [![Image from Gyazo](https://i.gyazo.com/cf4a7c202ac5b7e5c2585989bc5c615e.png)](https://gyazo.com/cf4a7c202ac5b7e5c2585989bc5c615e)
