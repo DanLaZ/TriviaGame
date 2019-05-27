@@ -12,6 +12,7 @@ var intervalId;
 function start() {
 
   if (!clockRunning) {
+
     intervalId = setInterval(count, 1000);
     clockRunning = true;
   }
@@ -20,9 +21,8 @@ function start() {
 function stop() {
 
   setTimeout(function() {
-    clearInterval(intervalId);
-    clockRunning = false;
-    alert(resultsAlert());
+
+    submitAnswers();
     window.location.reload();
   }, 120000)
 }
@@ -56,34 +56,30 @@ function timeConverter(t) {
 /* Logging Correct Answers */
 /*****************************/
 
-var correct = 0;
-var wrong = 5;
-
-function addToCorrect() {
-
-  correct++;
-  wrong--;
-}
-
-function resultsAlert() {
-
-  alert("Correct:" + " " + correct + "    " +  "Wrong:" + " " + wrong);
-}
-
 function submitAnswers() {
+  
+  var correct = 0;
+  var wrong = 5;
+  var numOfQuestions = 5;
 
-  clearInterval(intervalId);
-  clockRunning = false;
-  alert(resultsAlert());
-  window.location.reload();
+  var correctAnswer = "rightAnswer";
+  
+  var q1 = document.forms["questions"]["question1"].value;
+  var q2 = document.forms["questions"]["question2"].value;
+  var q3 = document.forms["questions"]["question3"].value;
+  var q4 = document.forms["questions"]["question4"].value;
+  var q5 = document.forms["questions"]["question5"].value;
+
+  for(var i = 1; i <= numOfQuestions; i++) {
+    if(eval("q" + i) == correctAnswer) {
+      correct++;
+      wrong--;
+    }
+  }
+
+  alert("Correct:" + " " + correct + " " + "Wrong:" + " " + wrong)
+
 }
-
-
-
-/* pieces needed */
-
-// var number=document.getElementById("rightAnswer").value;
-
  
 /* Button Clicks */
 /********************/
