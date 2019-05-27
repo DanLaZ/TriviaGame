@@ -22,7 +22,7 @@ function stop() {
   setTimeout(function() {
     clearInterval(intervalId);
     clockRunning = false;
-    alert(answerAlert);
+    alert(resultsAlert());
     window.location.reload();
   }, 120000)
 }
@@ -59,22 +59,32 @@ function timeConverter(t) {
 var correct = 0;
 var wrong = 5;
 
-function answerAlert() {
+function addToCorrect() {
 
-  addToCorrect;
+  correct++;
+  wrong--;
+}
+
+function resultsAlert() {
+
   alert("Correct:" + " " + correct + "    " +  "Wrong:" + " " + wrong);
 }
 
-function addToCorrect() {
-  
-  $("#rightAnswer").on("input:checked", function() {
-    correct++;
-    wrong--;
-  });
-  
-  
-} 
+function submitAnswers() {
 
+  clearInterval(intervalId);
+  clockRunning = false;
+  alert(resultsAlert());
+  window.location.reload();
+}
+
+
+
+/* pieces needed */
+
+// var number=document.getElementById("rightAnswer").value;
+
+ 
 /* Button Clicks */
 /********************/
 
@@ -82,6 +92,6 @@ window.onload = function() {
 
   $("#startTimer").on("click", start);
   $("#startTimer").on("click", stop);
-  $("#submitButton").on("click", answerAlert);
+  $("#submitButton").on("click", submitAnswers);  
 }
 
