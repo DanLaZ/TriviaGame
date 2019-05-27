@@ -57,7 +57,7 @@ function timeConverter(t) {
 /*****************************/
 
 function submitAnswers() {
-  
+
   var correct = 0;
   var wrong = 5;
   var numOfQuestions = 5;
@@ -71,10 +71,12 @@ function submitAnswers() {
   var q5 = document.forms["questions"]["question5"].value;
 
   for(var i = 1; i <= numOfQuestions; i++) {
+
     if(eval("q" + i) == correctAnswer) {
       correct++;
       wrong--;
     }
+    
   }
 
   alert("Correct:" + " " + correct + " " + "Wrong:" + " " + wrong)
